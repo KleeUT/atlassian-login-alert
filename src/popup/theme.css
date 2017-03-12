@@ -1,0 +1,46 @@
+body{
+    width:300px;
+    background-color:#f0f0f0;
+    /*background-image: url("../img/logo.png");*/
+    background-repeat: no-repeat;
+    background-position: center top;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1{
+    text-align: center
+}
+
+.regex{
+    text-align: center;
+    font-size: 14pt;
+}
+
+.regex--input{
+    text-align: left;
+    padding: 15px;
+    font-size:inherit;
+    margin:3.5px;
+}
+
+.regex--save{
+    height:15px;
+    padding: 15px;
+    font-size:inherit;
+    margin: 7px;
+    line-height: 0px;
+    height:45px;
+    background:#06F;
+    color:#FFF;
+    border: none;
+}
+
+.regex--error{
+    color:#F00;
+    padding:5px;
+}
+
+.regex--success{
+    color:#090;
+    padding:5px;
+}
