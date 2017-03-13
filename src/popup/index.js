@@ -2,19 +2,6 @@ updatePageContent();
 addSaveFuncionality()
 listenAndRespondToContentScript();
 
-function listenAndRespondToContentScript() {
-    chrome.runtime.onMessage.addListener(
-        function (request, sender, sendResponse) {
-            if (request.type == "Match Url?")
-                console.log(request);
-            let regex = localStorage.getItem("regex") || new RegExp(/.*/);
-            console.log(regex)
-            let isMatch = !!request.url.match(regex);
-            console.log(`${request.url} is${isMatch ? '' : ' not'} a match for ${regex}`);
-            sendResponse({ isMatch: isMatch });
-        });
-}
-
 function addSaveFuncionality() {
     document.getElementById('regex-save').addEventListener('click', function () {
         let input = document.getElementById('regex-input').value;
