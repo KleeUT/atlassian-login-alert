@@ -3,4 +3,13 @@
 	color: white;
 	text-align: center;
 	background-color : red;
+	animation: colorChange 8s infinite;
+
+}
+
+@keyframes colorChange
+{
+  0%   {background: yellow;}
+  50% {background: red;}
+  100% {background: yellow;}
 }
